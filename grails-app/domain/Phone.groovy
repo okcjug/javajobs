@@ -1,4 +1,4 @@
 class Phone {
-    String type
+    String type // cell|fax|office|...
     String number
 }

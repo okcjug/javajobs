@@ -3,6 +3,6 @@ class Recruiter {
     String userName
     String password
     String email
-    List phones
+    List phones // Phone instances
 
 }
