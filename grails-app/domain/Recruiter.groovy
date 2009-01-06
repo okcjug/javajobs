@@ -1,10 +1,11 @@
 class Recruiter {
-    static hasMany = [ phones : Phone,  jobs : Job ]
     
     String companyName
     String userName
     String password
     String email
+
+    static hasMany = [ phones : Phone,  jobs : Job ]
 
     static constraints = {
         companyName(blank:false, maxLength:64)
