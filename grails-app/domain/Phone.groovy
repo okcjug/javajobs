@@ -1,5 +1,6 @@
 class Phone {
-    static belongsTo = Recruiter
+    Recruiter recruiter
     String type // cell|fax|office|...
     String number
+    static belongsTo = Recruiter
 }
