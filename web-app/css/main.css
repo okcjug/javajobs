@@ -17,6 +17,10 @@ body {
     font: 11px verdana, arial, helvetica, sans-serif;
 }
 
+td a:link, td a:visited, td a:hover {
+    font-weight: normal;
+}
+
 a:link, a:visited, a:hover {
     color: #666;
     font-weight: bold;
