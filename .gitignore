@@ -3,3 +3,5 @@ plugins/core
 .settings
 .classpath
 .project
+application.properties
+stacktrace.log
