@@ -1,2 +1,5 @@
 web-app/WEB-INF
 plugins/core
+.settings
+.classpath
+.project
