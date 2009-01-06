@@ -19,6 +19,7 @@ body {
 
 td a:link, td a:visited, td a:hover {
     font-weight: normal;
+
 }
 
 a:link, a:visited, a:hover {
@@ -189,7 +190,7 @@ th.desc a {
     border-left: 1px solid #ddd;
 }
 .list th:hover, .list tr:hover {
-    background: #b2d1ff;
+    background: #D2B48C;
 }
 
 /* PAGINATION */
