@@ -3,6 +3,5 @@ class Recruiter {
     String userName
     String password
     String email
-    List phones // Phone instances
-
+    static hasMany = [ phones : Phone ]
 }
