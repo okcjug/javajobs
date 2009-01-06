@@ -11,8 +11,9 @@
         <div id="spinner" class="spinner" style="display:none;">
             <img src="${createLinkTo(dir:'images',file:'spinner.gif')}" alt="Spinner" />
         </div>	
-        <div class="logo"><img src="${createLinkTo(dir:'images',file:'okcjug_logo.png')}" alt="OKCJUG" />
-            <h1 style="display: inline">The Oklahoma City Java Users Group, Inc. Java Job Board</h1>
+        <div class="logo">
+            <h1 class="title">Oklahoma City Java Users Group, Inc.</h1>
+            <p class="subtitle">Java Job Board</p>
         </div>
         <g:layoutBody />		
     </body>	
