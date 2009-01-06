@@ -28,6 +28,10 @@ a:link, a:visited, a:hover {
     text-decoration: none;
 } 
 
+.yuimenuitem a:hover {
+    background: #D2B48C;
+}
+
 h1 {
     color: #006dba;
     font-weight: normal;
@@ -303,4 +307,16 @@ p.subtitle {
     margin-left: 2px;
     margin-right: 2px;
     padding: 5px
+}
+
+#jobsmenu {
+    position: static;
+}
+
+/* ie6 fixes */
+#jobsmenu .yuimenuitemlabel { _zoom: 1; }
+#jobsmenu .yuimenu .yuimenuitemlabel { _zoom: normal; }
+
+.textcol {
+    padding: 0 10px 0 10px;
 }
