@@ -1,5 +1,5 @@
 class Recruiter {
-    static hasMany = [ phones : Phone ]
+    static hasMany = [ phones : Phone,  jobs : Job ]
     
     String companyName
     String userName
