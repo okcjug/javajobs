@@ -23,35 +23,9 @@
 
                     
                         <tr class="prop">
-<<<<<<< HEAD:grails-app/views/recruiter/show.gsp
                             <td valign="top" class="name">Company Name:</td>
                             
                             <td valign="top" class="value">${fieldValue(bean:recruiterInstance, field:'companyName')}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name">User Name:</td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean:recruiterInstance, field:'userName')}</td>
-=======
-                            <td valign="top" class="name">Id:</td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean:recruiterInstance, field:'id')}</td>
->>>>>>> 4aae5fb50bc9bc490d943d9949aa08dd02553d39:grails-app/views/recruiter/show.gsp
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-<<<<<<< HEAD:grails-app/views/recruiter/show.gsp
-                            <td valign="top" class="name">Password:</td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean:recruiterInstance, field:'password')}</td>
-=======
-                            <td valign="top" class="name">Company Name:</td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean:recruiterInstance, field:'companyName')}</td>
->>>>>>> 4aae5fb50bc9bc490d943d9949aa08dd02553d39:grails-app/views/recruiter/show.gsp
                             
                         </tr>
                     
@@ -76,8 +50,6 @@
                         </tr>
                     
                         <tr class="prop">
-<<<<<<< HEAD:grails-app/views/recruiter/show.gsp
-=======
                             <td valign="top" class="name">Password:</td>
                             
                             <td valign="top" class="value">${fieldValue(bean:recruiterInstance, field:'password')}</td>
@@ -85,7 +57,6 @@
                         </tr>
                     
                         <tr class="prop">
->>>>>>> 4aae5fb50bc9bc490d943d9949aa08dd02553d39:grails-app/views/recruiter/show.gsp
                             <td valign="top" class="name">Phones:</td>
                             
                             <td  valign="top" style="text-align:left;" class="value">
@@ -98,8 +69,6 @@
                             
                         </tr>
                     
-<<<<<<< HEAD:grails-app/views/recruiter/show.gsp
-=======
                         <tr class="prop">
                             <td valign="top" class="name">User Name:</td>
                             
@@ -107,7 +76,6 @@
                             
                         </tr>
                     
->>>>>>> 4aae5fb50bc9bc490d943d9949aa08dd02553d39:grails-app/views/recruiter/show.gsp
                     </tbody>
                 </table>
             </div>

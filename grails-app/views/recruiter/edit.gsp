@@ -39,27 +39,6 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-<<<<<<< HEAD:grails-app/views/recruiter/edit.gsp
-                                    <label for="userName">User Name:</label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'userName','errors')}">
-                                    <input type="text" id="userName" name="userName" value="${fieldValue(bean:recruiterInstance,field:'userName')}"/>
-                                </td>
-                            </tr> 
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="password">Password:</label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'password','errors')}">
-                                    <input type="text" id="password" name="password" value="${fieldValue(bean:recruiterInstance,field:'password')}"/>
-                                </td>
-                            </tr> 
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-=======
->>>>>>> 4aae5fb50bc9bc490d943d9949aa08dd02553d39:grails-app/views/recruiter/edit.gsp
                                     <label for="email">Email:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'email','errors')}">
@@ -85,8 +64,6 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-<<<<<<< HEAD:grails-app/views/recruiter/edit.gsp
-=======
                                     <label for="password">Password:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'password','errors')}">
@@ -96,7 +73,6 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
->>>>>>> 4aae5fb50bc9bc490d943d9949aa08dd02553d39:grails-app/views/recruiter/edit.gsp
                                     <label for="phones">Phones:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'phones','errors')}">
@@ -111,8 +87,6 @@
                                 </td>
                             </tr> 
                         
-<<<<<<< HEAD:grails-app/views/recruiter/edit.gsp
-=======
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="userName">User Name:</label>
@@ -121,8 +95,6 @@
                                     <input type="text" id="userName" name="userName" value="${fieldValue(bean:recruiterInstance,field:'userName')}"/>
                                 </td>
                             </tr> 
-                        
->>>>>>> 4aae5fb50bc9bc490d943d9949aa08dd02553d39:grails-app/views/recruiter/edit.gsp
                         </tbody>
                     </table>
                 </div>

@@ -8,6 +8,7 @@ class Phone {
     static constraints = {
         type(inList: ['Mobile', 'Fax', 'Office'], blank:false, maxLength:6)
         number(maxLength:25)
+        recruiter()
     }
 
     String toString() { "${this.type}: ${this.number}" }

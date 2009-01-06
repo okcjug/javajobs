@@ -11,5 +11,6 @@ class Job {
         detail(maxLength:4096, blank:false)
         minimumPay(min:0,blank:false)
         maximumPay(min:0,blank:false)
+        recruiter()
     }
 }
