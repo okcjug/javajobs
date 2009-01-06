@@ -1,4 +1,5 @@
 class Job {
+    Recruiter recruiter
     String summary
     String detail
     Integer minimumPay
