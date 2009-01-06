@@ -25,15 +25,24 @@
                         
                    	        <g:sortableColumn property="companyName" title="Company Name" />
                         
+<<<<<<< HEAD:grails-app/views/recruiter/list.gsp
                    	        <g:sortableColumn property="userName" title="User Name" />
                         
                    	        <g:sortableColumn property="password" title="Password" />
                         
                    	        <g:sortableColumn property="email" title="Email" />
+=======
+                   	        <g:sortableColumn property="email" title="Email" />
+                        
+                   	        <g:sortableColumn property="password" title="Password" />
+                        
+                   	        <g:sortableColumn property="userName" title="User Name" />
+>>>>>>> 4aae5fb50bc9bc490d943d9949aa08dd02553d39:grails-app/views/recruiter/list.gsp
                         
                         </tr>
                     </thead>
                     <tbody>
+<<<<<<< HEAD:grails-app/views/recruiter/list.gsp
                     <g:each in="${recruiterInstanceList}" status="i" var="recruiterInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
@@ -46,6 +55,20 @@
                             <td>${fieldValue(bean:recruiterInstance, field:'password')}</td>
                         
                             <td>${fieldValue(bean:recruiterInstance, field:'email')}</td>
+=======
+                    <g:each in="${recruiters}" status="i" var="recruiter">
+                        <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
+                        
+                            <td><g:link action="show" id="${recruiter.id}">${fieldValue(bean:recruiter, field:'id')}</g:link></td>
+                        
+                            <td>${fieldValue(bean:recruiter, field:'companyName')}</td>
+                        
+                            <td>${fieldValue(bean:recruiter, field:'email')}</td>
+                        
+                            <td>${fieldValue(bean:recruiter, field:'password')}</td>
+                        
+                            <td>${fieldValue(bean:recruiter, field:'userName')}</td>
+>>>>>>> 4aae5fb50bc9bc490d943d9949aa08dd02553d39:grails-app/views/recruiter/list.gsp
                         
                         </tr>
                     </g:each>

@@ -37,10 +37,17 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+<<<<<<< HEAD:grails-app/views/recruiter/create.gsp
                                     <label for="userName">User Name:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'userName','errors')}">
                                     <input type="text" id="userName" name="userName" value="${fieldValue(bean:recruiterInstance,field:'userName')}"/>
+=======
+                                    <label for="email">Email:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'email','errors')}">
+                                    <input type="text" id="email" name="email" value="${fieldValue(bean:recruiterInstance,field:'email')}"/>
+>>>>>>> 4aae5fb50bc9bc490d943d9949aa08dd02553d39:grails-app/views/recruiter/create.gsp
                                 </td>
                             </tr> 
                         
@@ -55,10 +62,17 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+<<<<<<< HEAD:grails-app/views/recruiter/create.gsp
                                     <label for="email">Email:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'email','errors')}">
                                     <input type="text" id="email" name="email" value="${fieldValue(bean:recruiterInstance,field:'email')}"/>
+=======
+                                    <label for="userName">User Name:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'userName','errors')}">
+                                    <input type="text" id="userName" name="userName" value="${fieldValue(bean:recruiterInstance,field:'userName')}"/>
+>>>>>>> 4aae5fb50bc9bc490d943d9949aa08dd02553d39:grails-app/views/recruiter/create.gsp
                                 </td>
                             </tr> 
                         
