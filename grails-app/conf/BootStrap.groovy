@@ -6,6 +6,7 @@ class BootStrap {
              userName : 'testuser',
              password : 'foo',
              email: 'testuser@mytestcompany.com').save()
+         new Recruiter(companyName:"Spartan", userName:"user", password:"pass", email:"user@spartan.com").save()
      }
      def destroy = {
      }
