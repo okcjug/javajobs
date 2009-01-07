@@ -8,11 +8,9 @@
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
             <span class="menuButton"><g:link class="create" action="create">New Job</g:link></span>
         </div>
         <div class="body">
-            <h1>Job List</h1>
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
@@ -27,8 +25,6 @@
 
                    	        <g:sortableColumn property="maximumPay" title="Maximum Pay" />
 
-                   	        <g:sortableColumn property="detail" title="Detail" />
-                        
                    	        <th>Recruiter</th>
                    	    
                         </tr>
@@ -43,8 +39,6 @@
                         
                             <td><g:link action="show" id="${jobInstance.id}">${fieldValue(bean:jobInstance, field:'maximumPay')}</g:link></td>
                         
-                            <td><g:link action="show" id="${jobInstance.id}">${fieldValue(bean:jobInstance, field:'detail')}</g:link></td>
-
                             <td><g:link action="show" id="${jobInstance.id}">${fieldValue(bean:jobInstance, field:'user')}</g:link></td>
 
                         </tr>

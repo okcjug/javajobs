@@ -7,12 +7,10 @@
         <title>Create Job</title>         
     </head>
     <body>
-        <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
+        <!-- div class="nav">
             <span class="menuButton"><g:link class="list" action="list">Job List</g:link></span>
-        </div>
+        </div> -->
         <div class="body">
-            <h1>Create Job</h1>
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>

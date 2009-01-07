@@ -8,7 +8,15 @@ class JobController {
     static authorizations = [
         index: Role.ALL_ROLES,
         list: Role.ALL_ROLES,
-        view: Role.ALL_ROLES ]
+        view: Role.ALL_ROLES,
+        show: Role.ALL_ROLES,
+
+        edit: Role.ALL_ROLES,
+        delete: Role.ALL_ROLES,
+        save: Role.ALL_ROLES,
+        update: Role.ALL_ROLES,
+        create: Role.ALL_ROLES
+    ]
 
 
     def list = {
