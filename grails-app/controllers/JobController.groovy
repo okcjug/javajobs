@@ -5,6 +5,12 @@ class JobController {
     // the delete, save and update actions only accept POST requests
     def allowedMethods = [delete:'POST', save:'POST', update:'POST']
 
+    static authorizations = [
+        index: Role.ALL_ROLES,
+        list: Role.ALL_ROLES,
+        view: Role.ALL_ROLES ]
+
+
     def list = {
         if(!params.max) params.max = 10
         [ jobInstanceList: Job.list( params ) ]
