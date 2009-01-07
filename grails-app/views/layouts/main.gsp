@@ -66,26 +66,5 @@
                 <p>Footer</p>
             </div>
         </div>
-        <script type="text/javascript">
-            YAHOO.util.Event.onContentReady("jobsmenu", function() {
-                var menu = new YAHOO.widget.Menu("jobsmenu", {
-                    position: "static",
-                    hidedelay: 500,
-                    lazyload: true,
-                    effect: {
-                        effect: YAHOO.widget.ContainerEffect.FADE,
-                        duration: 0.5
-                    }
-                }
-                var menuItems = getMenuItems();
-                menu.subscribe("beforeRender", function() {
-                    if (this.getRoot() == this) {
-                        this.getItem(0).cfg.setProperty("submenu", menuItems[0]);
-                    }
-                )};
-                
-                menu.render();
-            }
-        </script>
     </body>	
 </html>

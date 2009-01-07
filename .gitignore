@@ -1,5 +1,6 @@
 web-app/WEB-INF
-plugins/core
+plugins/
+web-app/js/yui
 .settings
 .classpath
 .project
