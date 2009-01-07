@@ -65,7 +65,7 @@ input:focus, select:focus, textarea:focus {
 
 .body {
     float: left;
-    margin: 0 15px 10px 15px;
+    /* margin: 0 15px 10px 15px;*/
 }
 
 /* NAVIGATION MENU */
@@ -189,6 +189,9 @@ th.desc a {
 
 .list table {
     border-collapse: collapse;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
 .list th, .list td {
     border-left: 1px solid #ddd;
