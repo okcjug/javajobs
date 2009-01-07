@@ -1,6 +1,7 @@
 #!/bin/bash
 
-grails update
+yes | grails upgrade
+
 if [ ! -e web-app/js/yui ] ; then
 	grails install-plugin yui
 fi
