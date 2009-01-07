@@ -7,8 +7,8 @@ fi
 
 if [ ! -e grails-app/conf/StarkSecurityConfig.groovy ] ; then
 	grails install-plugin stark-security
-	grails stark-security-install-full
 fi
+grails stark-security-install-full
 
 ROLES="ROLE_SUPER_USER ROLE_RECRUITER"
 LIST="ANONYMOUS"
