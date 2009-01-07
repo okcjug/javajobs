@@ -19,6 +19,6 @@ for ROLE in $ROLES ; do
 	LIST="$LIST , $ROLE"
 done
 
-#echo "s/\/\/ static final ADMIN_USER = 'ROLE_ADMIN_USER'/$CONSTANTS" grails-app/domain/Role.groovy
-sed -e "s/\/\/ static final ADMIN_USER = 'ROLE_ADMIN_USER'/$CONSTANTS/" grails-app/domain/Role.groovy > Role.groovy
-sed -e "s/\[  ANONYMOUS \]/[ $LIST ]/" Role.groovy > grails-app/domain/Role.groovy
+sed -i bak -e "s/\/\/ static final ADMIN_USER = 'ROLE_ADMIN_USER'/$CONSTANTS/" grails-app/domain/Role.groovy 
+sed -i bak -e "s/\[  ANONYMOUS \]/[ $LIST ]/" grails-app/domain/Role.groovy
+rm grails-app/domain/*.groovybak
