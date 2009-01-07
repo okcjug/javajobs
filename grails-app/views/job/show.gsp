@@ -52,7 +52,7 @@
                         <tr class="prop">
                             <td valign="top" class="name">Recruiter:</td>
                             
-                            <td valign="top" class="value"><g:link controller="recruiter" action="show" id="${jobInstance?.recruiter?.id}">${jobInstance?.recruiter?.encodeAsHTML()}</g:link></td>
+                            <td valign="top" class="value"><g:link controller="user" action="show" id="${jobInstance?.user?.id}">${jobInstance?.user?.encodeAsHTML()}</g:link></td>
                             
                         </tr>
                     

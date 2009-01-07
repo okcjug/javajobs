@@ -4,21 +4,21 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="main" />
-        <title>Create Recruiter</title>         
+        <title>Create Profile</title>
     </head>
     <body>
         <div class="nav">
             <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
-            <span class="menuButton"><g:link class="list" action="list">Recruiter List</g:link></span>
+            <span class="menuButton"><g:link class="list" action="list">Profile List</g:link></span>
         </div>
         <div class="body">
-            <h1>Create Recruiter</h1>
+            <h1>Create Profile</h1>
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
-            <g:hasErrors bean="${recruiterInstance}">
+            <g:hasErrors bean="${profile}">
             <div class="errors">
-                <g:renderErrors bean="${recruiterInstance}" as="list" />
+                <g:renderErrors bean="${profile}" as="list" />
             </div>
             </g:hasErrors>
             <g:form action="save" method="post" >
@@ -30,8 +30,8 @@
                                 <td valign="top" class="name">
                                     <label for="companyName">Company Name:</label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'companyName','errors')}">
-                                    <input type="text" id="companyName" name="companyName" value="${fieldValue(bean:recruiterInstance,field:'companyName')}"/>
+                                <td valign="top" class="value ${hasErrors(bean:profile,field:'companyName','errors')}">
+                                    <input type="text" id="companyName" name="companyName" value="${fieldValue(bean:profile,field:'companyName')}"/>
                                 </td>
                             </tr> 
                         
@@ -39,8 +39,8 @@
                                 <td valign="top" class="name">
                                     <label for="email">Email:</label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'email','errors')}">
-                                    <input type="text" id="email" name="email" value="${fieldValue(bean:recruiterInstance,field:'email')}"/>
+                                <td valign="top" class="value ${hasErrors(bean:profile,field:'email','errors')}">
+                                    <input type="text" id="email" name="email" value="${fieldValue(bean:profile,field:'email')}"/>
                                 </td>
                             </tr> 
                         
@@ -48,8 +48,8 @@
                                 <td valign="top" class="name">
                                     <label for="password">Password:</label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'password','errors')}">
-                                    <input type="text" id="password" name="password" value="${fieldValue(bean:recruiterInstance,field:'password')}"/>
+                                <td valign="top" class="value ${hasErrors(bean:profile,field:'password','errors')}">
+                                    <input type="text" id="password" name="password" value="${fieldValue(bean:profile,field:'password')}"/>
                                 </td>
                             </tr> 
                         
@@ -57,8 +57,8 @@
                                 <td valign="top" class="name">
                                     <label for="userName">User Name:</label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean:recruiterInstance,field:'userName','errors')}">
-                                    <input type="text" id="userName" name="userName" value="${fieldValue(bean:recruiterInstance,field:'userName')}"/>
+                                <td valign="top" class="value ${hasErrors(bean:profile,field:'userName','errors')}">
+                                    <input type="text" id="userName" name="userName" value="${fieldValue(bean:profile,field:'userName')}"/>
                                 </td>
                             </tr> 
                         

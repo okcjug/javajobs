@@ -1,4 +1,4 @@
-class Recruiter {
+class Profile {
     
     String companyName
     String userName

@@ -68,8 +68,8 @@
                                 <td valign="top" class="name">
                                     <label for="recruiter">Recruiter:</label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean:jobInstance,field:'recruiter','errors')}">
-                                    <g:select optionKey="id" from="${Recruiter.list()}" name="recruiter.id" value="${jobInstance?.recruiter?.id}" ></g:select>
+                                <td valign="top" class="value ${hasErrors(bean:jobInstance,field:'user','errors')}">
+                                    <g:select optionKey="id" from="${User.list()}" name="user.id" value="${jobInstance?.user?.id}" ></g:select>
                                 </td>
                             </tr> 
                         
