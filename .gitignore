@@ -8,3 +8,4 @@ application.properties
 stacktrace.log
 JavaJobs.launch 
 JavaJobs.tmproj 
+grails-app/conf/StarkSecurityConfig.groovy
