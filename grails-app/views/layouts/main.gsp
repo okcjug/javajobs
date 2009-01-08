@@ -2,7 +2,7 @@
     <head>
         <title>Oklahoma City Java Users Group Job Board - <g:layoutTitle default="Main" /></title>
         <yui:stylesheet dir="reset-fonts-grids" file="reset-fonts-grids.css" />
-        <yui:stylesheet dir="menu/assets/skins/sam" file="menu.css" />
+        <yui:stylesheet dir="assets/skins/sam" file="skin.css" />
         <yui:javascript dir="utilities" file="utilities.js"/>
         <yui:javascript dir="animation" file="animation-min.js"/>
         <yui:javascript dir="container" file="container_core-min.js"/>

@@ -38,7 +38,18 @@
                                     <label for="detail">Detail:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean:jobInstance,field:'detail','errors')}">
-                                    <input type="text" id="detail" name="detail" value="${fieldValue(bean:jobInstance,field:'detail')}"/>
+                                    <textarea id="detail" name="detail">
+										${fieldValue(bean:jobInstance,field:'detail')}
+									</textarea>
+									<yui:javascript dir="element" file="element-beta-min.js"/>
+									<yui:javascript dir="editor" file="editor-min.js"/>
+									<script type="text/javascript">
+										new YAHOO.widget.SimpleEditor("detail", {
+											height: "300px", 
+											width: "500px",
+											handleSubmit: true
+										}).render();
+									</script>
                                 </td>
                             </tr> 
                         
