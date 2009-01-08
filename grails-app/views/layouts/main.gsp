@@ -8,21 +8,6 @@
         <yui:javascript dir="container" file="container_core-min.js"/>
         <yui:javascript dir="menu" file="menu-min.js"/>
 
-        <!-- yui layout and menu -->
-        <!--
-        Do:  grails install-plugin yui
-
-
-        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.2/build/reset-fonts-grids/reset-fonts-grids.css">
-        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.2/build/menu/assets/skins/sam/menu.css">
-        <script type="text/javascript" src="http://yui.yahooapis.com/2.5.2/build/yahoo/yahoo-min.js"></script>
-        <script type="text/javascript" src="http://yui.yahooapis.com/2.5.2/build/dom/dom-min.js"></script>
-        <script type="text/javascript" src="http://yui.yahooapis.com/2.5.2/build/event/event-min.js"></script>
-        <script type="text/javascript" src="http://yui.yahooapis.com/2.5.2/build/animation/animation-min.js"></script>
-        <script type="text/javascript" src="http://yui.yahooapis.com/2.5.2/build/container/container_core-min.js"></script>
-        <script type="text/javascript" src="http://yui.yahooapis.com/2.5.2/build/menu/menu-min.js"></script>
-        -->
-
         <link rel="stylesheet" href="${createLinkTo(dir:'css',file:'main.css')}" />
         <link rel="shortcut icon" href="${createLinkTo(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
         <g:layoutHead />
