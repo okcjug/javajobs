@@ -17,10 +17,10 @@ class BootStrap {
          user.addToRoles(Role.findByAuthority('ROLE_SUPER_USER'))
          user.save()
 
-         new Job(user: user, summary: "Java Developer", detail: "Must know Java!", minimumPay: 10000, maximumPay: 25000).save()
-         new Job(user: user, summary: "Ruby Developer", detail: "Must know Ruby!", minimumPay: 20000, maximumPay: 75000).save()
-         new Job(user: user, summary: "Groovy Developer", detail: "Must know Groovy!", minimumPay: 15000, maximumPay: 35000).save()
-         new Job(user: user, summary: "JavaScript Developer", detail: "Must know JavaScript!", minimumPay: 70000, maximumPay: 125000).save()
+         new Job(user: user, jobTitle: "Java Developer", coreSkills: "Must know Java!", industry: "Air Traffic").save()
+         new Job(user: user, jobTitle: "Ruby Developer", coreSkills: "Must know Ruby!", industry: "Travel").save()
+         new Job(user: user, jobTitle: "Groovy Developer", coreSkills: "Must know Groovy!", industry: "Hertz").save()
+         new Job(user: user, jobTitle: "JavaScript Developer", coreSkills: "Must know JavaScript!", industry: "NASA").save()
 
      }
      def destroy = {

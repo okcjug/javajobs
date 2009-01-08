@@ -15,36 +15,14 @@
             <div class="message">${flash.message}</div>
             </g:if>
             <div class="list">
-                <table>
-                    <thead>
-                        <tr>
-                        
-                   	        <g:sortableColumn property="summary" title="Summary" />
-                        
-                   	        <g:sortableColumn property="minimumPay" title="Minimum Pay" />
-
-                   	        <g:sortableColumn property="maximumPay" title="Maximum Pay" />
-
-                   	        <th>Recruiter</th>
-                   	    
-                        </tr>
-                    </thead>
-                    <tbody>
+               
                     <g:each in="${jobInstanceList}" status="i" var="jobInstance">
-                        <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
-                        
-                            <td><g:link action="show" id="${jobInstance.id}">${fieldValue(bean:jobInstance, field:'summary')}</g:link></td>
-                        
-                            <td><g:link action="show" id="${jobInstance.id}">${fieldValue(bean:jobInstance, field:'minimumPay')}</g:link></td>
-                        
-                            <td><g:link action="show" id="${jobInstance.id}">${fieldValue(bean:jobInstance, field:'maximumPay')}</g:link></td>
-                        
-                            <td><g:link action="show" id="${jobInstance.id}">${fieldValue(bean:jobInstance, field:'user')}</g:link></td>
-
-                        </tr>
+                            <g:link action="show" id="${jobInstance.id}"><strong>${fieldValue(bean:jobInstance, field:'jobTitle')}</strong></g:link>
+                            Date Posted: ${fieldValue(bean:jobInstance, field:'datePosted')}<br/>
+                            Core Skills: ${fieldValue(bean:jobInstance, field:'coreSkills')}<br/>
+                            Industry/Company:  ${fieldValue(bean:jobInstance, field:'industry')}<br/>
+                            <hr/>
                     </g:each>
-                    </tbody>
-                </table>
             </div>
             <div class="paginateButtons">
                 <g:paginate total="${Job.count()}" />
