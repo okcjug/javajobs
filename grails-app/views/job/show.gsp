@@ -33,16 +33,9 @@
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name">Minimum Pay:</td>
+                            <td valign="top" class="name">Pay Range:</td>
                             
-                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'minimumPay')}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name">Maximum Pay:</td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'maximumPay')}</td>
+                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'payRange')}</td>
                             
                         </tr>
                     

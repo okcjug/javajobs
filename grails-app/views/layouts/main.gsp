@@ -57,6 +57,9 @@
                                 <li class="yuimenuitem">
                                     <a class="yuimenuitemlabel" href="/JavaJobs">Job Posting</a>
                                 </li>
+								<li>
+									<a class="yuimenuitemlabel" href="http://localhost:8080/JavaJobs/recruiter/home">Recruiter</a>
+								</li>
                             </ul>
                         </div>
                     </div>

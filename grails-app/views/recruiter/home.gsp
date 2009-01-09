@@ -6,6 +6,6 @@
     </head>
     <body>
 		<h1>Recruiter Home!</h1>
-		${profile}
+		${profile.companyName}
 	</body>
 </html>

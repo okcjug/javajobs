@@ -39,35 +39,26 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean:jobInstance,field:'detail','errors')}">
                                     <textarea id="detail" name="detail">
-										${fieldValue(bean:jobInstance,field:'detail')}
-									</textarea>
-									<yui:javascript dir="element" file="element-beta-min.js"/>
-									<yui:javascript dir="editor" file="editor-min.js"/>
-									<script type="text/javascript">
-										new YAHOO.widget.SimpleEditor("detail", {
-											height: "300px", 
-											width: "500px",
-											handleSubmit: true
-										}).render();
-									</script>
+                                        ${fieldValue(bean:jobInstance,field:'detail')}
+                                    </textarea>
+                                    <yui:javascript dir="element" file="element-beta-min.js"/>
+                                    <yui:javascript dir="editor" file="editor-min.js"/>
+                                    <script type="text/javascript">
+                                        new YAHOO.widget.SimpleEditor("detail", {
+                                            height: "300px", 
+                                            width: "500px",
+                                            handleSubmit: true
+                                        }).render();
+                                    </script>
                                 </td>
                             </tr> 
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="minimumPay">Minimum Pay:</label>
+                                    <label for="payRange">Pay Range:</label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean:jobInstance,field:'minimumPay','errors')}">
-                                    <input type="text" id="minimumPay" name="minimumPay" value="${fieldValue(bean:jobInstance,field:'minimumPay')}" />
-                                </td>
-                            </tr> 
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="maximumPay">Maximum Pay:</label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean:jobInstance,field:'maximumPay','errors')}">
-                                    <input type="text" id="maximumPay" name="maximumPay" value="${fieldValue(bean:jobInstance,field:'maximumPay')}" />
+                                <td valign="top" class="value ${hasErrors(bean:jobInstance,field:'payRange','errors')}">
+                                    <input type="text" id="payRange" name="payRange" value="${fieldValue(bean:jobInstance,field:'payRange')}" />
                                 </td>
                             </tr> 
                         

@@ -1,7 +1,7 @@
 class RecruiterController {
 
 	static authorizations = [
-		home: [Role.ROLE_RECRUITER]
+		home: Role.ALL_ROLES
 	]
 
     def index = { 
@@ -9,7 +9,7 @@ class RecruiterController {
 	}
 	
 	def home = {
-		profile = Profile.findByUserName(request.remoteUser)
+		def profile = Profile.findByUserName(request.remoteUser)
 		[profile: profile]
 	}
 }
