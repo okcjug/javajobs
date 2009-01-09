@@ -1,22 +1,23 @@
 class Job {
-    User user
+    Profile profile
     String jobTitle
     String summary
     String detail
-    String payRange
+    String payRange = ""
     String coreSkills
     String industry
-    Date   datePosted
+    Date   datePosted = new Date()
     static belongsTo = Profile
 
+	
     static constraints =  {
         jobTitle(maxLength:36, blank:false)
         summary(maxLength:80, blank:false)
         detail(maxLength:4096, blank:false)
-        payRange(blank:false)
+        payRange(blank:true)
         coreSkills()
         industry()
-        datePosted(min:new Date(), blank:false)
-        user()
+        datePosted(nullable: false, blank:false)
+        profile(nullable:true)
     }
 }

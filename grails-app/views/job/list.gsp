@@ -12,17 +12,17 @@
         </div>
         <div class="body">
             <g:if test="${flash.message}">
-            <div class="message">${flash.message}</div>
+                <div class="message">${flash.message}</div>
             </g:if>
             <div class="list">
-               
-                    <g:each in="${jobInstanceList}" status="i" var="jobInstance">
-                            <g:link action="show" id="${jobInstance.id}"><strong>${fieldValue(bean:jobInstance, field:'jobTitle')}</strong></g:link>
-                            Date Posted: ${fieldValue(bean:jobInstance, field:'datePosted')}<br/>
-                            Core Skills: ${fieldValue(bean:jobInstance, field:'coreSkills')}<br/>
-                            Industry/Company:  ${fieldValue(bean:jobInstance, field:'industry')}<br/>
-                            <hr/>
-                    </g:each>
+
+                <g:each in="${jobInstanceList}" status="i" var="jobInstance">
+                    <g:link action="show" id="${jobInstance.id}"><strong>${fieldValue(bean:jobInstance, field:'jobTitle')}</strong></g:link>
+                    Date Posted: ${fieldValue(bean:jobInstance, field:'datePosted')}<br/>
+                    Core Skills: ${fieldValue(bean:jobInstance, field:'coreSkills')}<br/>
+                    Industry/Company:  ${fieldValue(bean:jobInstance, field:'industry')}<br/>
+                    <hr/>
+                </g:each>
             </div>
             <div class="paginateButtons">
                 <g:paginate total="${Job.count()}" />
