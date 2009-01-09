@@ -7,13 +7,7 @@
         <title>Edit Job</title>
     </head>
     <body>
-        <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
-            <span class="menuButton"><g:link class="list" action="list">Job List</g:link></span>
-            <span class="menuButton"><g:link class="create" action="create">New Job</g:link></span>
-        </div>
-        <div class="body">
-            <h1>Edit Job</h1>
+       <div class="body">
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
@@ -51,7 +45,18 @@
                                     <label for="detail">Detail:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean:jobInstance,field:'detail','errors')}">
-                                    <input type="text" id="detail" name="detail" value="${fieldValue(bean:jobInstance,field:'detail')}"/>
+                                    <textarea id="detail" name="detail">
+                                        ${fieldValue(bean:jobInstance,field:'detail')}
+                                    </textarea>
+                                    <yui:javascript dir="element" file="element-beta-min.js"/>
+                                    <yui:javascript dir="editor" file="editor-min.js"/>
+                                    <script type="text/javascript">
+                                        new YAHOO.widget.SimpleEditor("detail", {
+                                            height: "300px",
+                                            width: "500px",
+                                            handleSubmit: true
+                                        }).render();
+                                    </script>
                                 </td>
                             </tr> 
                         
@@ -75,13 +80,20 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                    <label for="payRange">Pay Range:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:jobInstance,field:'minimumPay','errors')}">
+                                    <input type="text" id="payRange" name="payRange" value="${fieldValue(bean:jobInstance,field:'minimumPay')}" />
+                                </td>
+                            </tr> 
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                     <label for="industry">Industry:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean:jobInstance,field:'industry','errors')}">
                                     <input type="text" id="industry" name="industry" value="${fieldValue(bean:jobInstance,field:'industry')}"/>
                                 </td>
-                            </tr> 
-                        
+                            </tr>
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="datePosted">Date Posted:</label>
