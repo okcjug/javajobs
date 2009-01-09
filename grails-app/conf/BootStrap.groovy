@@ -3,7 +3,8 @@ import org.codehaus.groovy.grails.plugins.starksecurity.PasswordEncoder
 class BootStrap {
 
     def init = { servletContext ->
-        new Profile(companyName:"Spartan", userName:"user", email:"user@spartan.com").save()
+        def profile = new Profile(companyName:"Spartan", userName:"user", email:"user@spartan.com")
+        profile.save()
         new Profile(companyName:"TekSystems", userName:"teksystems", email:"nobody@okcjug.org").save()
 
         // Create some roles
@@ -23,7 +24,7 @@ class BootStrap {
         user.save()
 
         new Job(
-            user: user, 
+            profile: profile,
             jobTitle: "Java Developer", 
             coreSkills: "Must know Java!", 
             industry: "Air Traffic", 
@@ -31,7 +32,7 @@ class BootStrap {
             detail: "<p>awesome java job</p><p>with formatting</p>"
         ).save()
         new Job(
-            user: user, 
+            profile: profile,
             jobTitle: "Ruby Developer", 
             coreSkills: "Must know Ruby!", 
             industry: "Travel", 
@@ -39,7 +40,7 @@ class BootStrap {
             detail: "<p>awesome ruby job</p><p>with formatting</p>"
         ).save()
         new Job(
-            user: user, 
+            profile: profile,
             jobTitle: "Groovy Developer", 
             coreSkills: "Must know Groovy!", 
             industry: "Hertz", 
@@ -47,7 +48,7 @@ class BootStrap {
             detail: "<p>awesome groovy job</p><p>with formatting</p>"
         ).save()
         new Job(
-            user: user, 
+            profile: profile,
             jobTitle: "JavaScript Developer", 
             coreSkills: "Must know JavaScript!", 
             industry: "NASA", 
