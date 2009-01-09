@@ -1,5 +1,5 @@
 class Job {
-    User user
+    Profile profile
     String jobTitle
     String summary
     String detail
@@ -16,7 +16,7 @@ class Job {
         payRange(blank:false)
         coreSkills()
         industry()
-        datePosted(min:new Date(), blank:false)
-        user()
+        datePosted(nullable: false, blank:false)
+        profile(nullable:true)
     }
 }

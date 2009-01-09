@@ -8,15 +8,33 @@
     </head>
     <body>
         <div class="nav">
+            <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
+            <span class="menuButton"><g:link class="list" action="list">Job List</g:link></span>
             <span class="menuButton"><g:link class="create" action="create">New Job</g:link></span>
         </div>
         <div class="body">
+            <h1>Show Job</h1>
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
             <div class="dialog">
                 <table>
                     <tbody>
+
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">Id:</td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'id')}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">Job Title:</td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'jobTitle')}</td>
+                            
+                        </tr>
                     
                         <tr class="prop">
                             <td valign="top" class="name">Summary:</td>
@@ -33,23 +51,37 @@
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name">Minimum Pay:</td>
+                            <td valign="top" class="name">Pay Range:</td>
                             
-                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'minimumPay')}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name">Maximum Pay:</td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'maximumPay')}</td>
+                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'payRange')}</td>
                             
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name">Recruiter:</td>
+                            <td valign="top" class="name">Core Skills:</td>
                             
-                            <td valign="top" class="value"><g:link controller="user" action="show" id="${jobInstance?.user?.id}">${jobInstance?.user?.encodeAsHTML()}</g:link></td>
+                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'coreSkills')}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">Industry:</td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'industry')}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">Date Posted:</td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'datePosted')}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name">Profile:</td>
+                            
+                            <td valign="top" class="value"><g:link controller="profile" action="show" id="${jobInstance?.profile?.id}">${jobInstance?.profile?.encodeAsHTML()}</g:link></td>
                             
                         </tr>
                     
