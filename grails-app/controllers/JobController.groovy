@@ -10,6 +10,7 @@ class JobController {
         list: Role.ALL_ROLES,
         view: Role.ALL_ROLES,
         show: Role.ALL_ROLES,
+        feed: Role.ALL_ROLES,
 
         edit: Role.ALL_ROLES,
         delete: Role.ALL_ROLES,
@@ -91,6 +92,23 @@ class JobController {
         }
         else {
             render(view:'create',model:[jobInstance:jobInstance])
+        }
+    }
+
+    def feed = {
+        render(feedType:"atom", feedVersion:"1.0") {
+            title = "OKC Java Jobs"
+            link = "http://your.test.server/job/feed"
+            description = "Oklahoma City Java Users Group, Inc. Job Feed"
+
+            Job.list().each() {
+                job ->
+                    entry {
+                        title = job.jobTitle
+                        link = "http://your.test.server/article/"
+                        job.detail
+                    }
+            }
         }
     }
 }

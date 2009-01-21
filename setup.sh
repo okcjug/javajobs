@@ -1,14 +1,16 @@
 #!/bin/bash
 
-yes | grails upgrade
+# Bad idea, apparently
+#yes | grails upgrade
 
-if [ ! -e web-app/js/yui ] ; then
+#if [ ! -e web-app/js/yui ] ; then
 	grails install-plugin yui
-fi
+#fi
 
-if [ ! -e grails-app/conf/StarkSecurityConfig.groovy ] ; then
+#if [ ! -e grails-app/conf/StarkSecurityConfig.groovy ] ; then
 	grails install-plugin stark-security
-fi
+#fi
+grails install-plugin feeds
 grails stark-security-install-full
 
 ROLES="ROLE_SUPER_USER ROLE_RECRUITER"
