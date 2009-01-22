@@ -33,15 +33,14 @@
                         <tr class="prop">
                             <td valign="top" class="name">Summary:</td>
                             
-                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'summary')}</td>
+                            <td valign="top" class="value">${jobInstance.summary}</td>
                             
                         </tr>
                     
                         <tr class="prop">
                             <td valign="top" class="name">Detail:</td>
                             
-                            <td valign="top" class="value">${fieldValue(bean:jobInstance, field:'detail')}</td>
-                            
+                            <td valign="top" class="value">${jobInstance.detail}</td>
                         </tr>
                     
                         <tr class="prop">

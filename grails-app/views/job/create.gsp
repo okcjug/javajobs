@@ -79,14 +79,6 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="payRange">Pay Range:</label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean:jobInstance,field:'payRange','errors')}">
-                                    <input type="text" id="payRange" name="payRange" value="${fieldValue(bean:jobInstance,field:'payRange')}" />
-                                </td>
-							</tr>
-                            <tr class="prop">
-                                <td valign="top" class="name">
                                     <label for="industry">Industry:</label>
 								</td>
                                 <td valign="top" class="value ${hasErrors(bean:jobInstance,field:'industry','errors')}">
