@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This should probably only be run once, when the project is first checked out
+
 # Bad idea, apparently
 #yes | grails upgrade
 
